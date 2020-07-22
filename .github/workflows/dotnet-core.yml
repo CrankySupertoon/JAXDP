@@ -28,5 +28,5 @@ jobs:
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v2
       with:
-        name: JAXDP
+        name: JAXDP-dev
         path: D:\a\JAXDP\JAXDP\bin\Debug\netcoreapp3.1\publish
