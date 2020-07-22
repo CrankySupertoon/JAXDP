@@ -25,3 +25,8 @@ jobs:
       run: dotnet test --no-restore --verbosity normal
     - name: Publish
       run: dotnet publish
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: JAXDP
+        path: /home/runner/work/Playground/Playground/src/WebApp1/bin/Release/netcoreapp3.1/publish/
